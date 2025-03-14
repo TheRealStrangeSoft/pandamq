@@ -1,0 +1,31 @@
+name: "Tests"
+on:
+  pull_request:
+    paths:
+      - '**.cs'
+      - '**.csproj'
+      - '**.props'
+      - '**.config'
+  push:
+    branches:
+      - main
+      - release/**
+    paths:
+      - '**.cs'
+      - '**.csproj'
+      - '**.props'
+      - '**.config'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+      - run: dotnet test
