@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8BF9B569-2C79-4CF3-96DE-DB5C78987E68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaMQ.Abstractions", "src\PandaMQ.Abstractions\PandaMQ.Abstractions.csproj", "{A7591A8A-A241-4A15-A5D8-9076FA0F4D5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaMQ.Client.Abstractions", "src\PandaMQ.Client.Abstractions\PandaMQ.Client.Abstractions.csproj", "{A03AAE30-331B-4E7E-AB53-2CCEE273926B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaMQ.Server.Abstractions", "src\PandaMQ.Server.Abstractions\PandaMQ.Server.Abstractions.csproj", "{76D8E28A-1170-4AD4-8AA4-6A707960C846}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaMQ.Server.Core", "src\PandaMQ.Server.Core\PandaMQ.Server.Core.csproj", "{075624D1-6E7C-4FD6-9CFD-D2CAAE4ACD49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1201107A-EA45-48FC-9C37-A0F19BF07F1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PandaMQ.UnitTests", "tests\PandaMQ.UnitTests\PandaMQ.UnitTests.csproj", "{46933223-63DB-41B3-A5C6-B910A88C3D93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7591A8A-A241-4A15-A5D8-9076FA0F4D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7591A8A-A241-4A15-A5D8-9076FA0F4D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7591A8A-A241-4A15-A5D8-9076FA0F4D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7591A8A-A241-4A15-A5D8-9076FA0F4D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03AAE30-331B-4E7E-AB53-2CCEE273926B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03AAE30-331B-4E7E-AB53-2CCEE273926B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03AAE30-331B-4E7E-AB53-2CCEE273926B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03AAE30-331B-4E7E-AB53-2CCEE273926B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D8E28A-1170-4AD4-8AA4-6A707960C846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D8E28A-1170-4AD4-8AA4-6A707960C846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D8E28A-1170-4AD4-8AA4-6A707960C846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D8E28A-1170-4AD4-8AA4-6A707960C846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{075624D1-6E7C-4FD6-9CFD-D2CAAE4ACD49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075624D1-6E7C-4FD6-9CFD-D2CAAE4ACD49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075624D1-6E7C-4FD6-9CFD-D2CAAE4ACD49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075624D1-6E7C-4FD6-9CFD-D2CAAE4ACD49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46933223-63DB-41B3-A5C6-B910A88C3D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46933223-63DB-41B3-A5C6-B910A88C3D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46933223-63DB-41B3-A5C6-B910A88C3D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46933223-63DB-41B3-A5C6-B910A88C3D93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7591A8A-A241-4A15-A5D8-9076FA0F4D5C} = {8BF9B569-2C79-4CF3-96DE-DB5C78987E68}
+		{A03AAE30-331B-4E7E-AB53-2CCEE273926B} = {8BF9B569-2C79-4CF3-96DE-DB5C78987E68}
+		{76D8E28A-1170-4AD4-8AA4-6A707960C846} = {8BF9B569-2C79-4CF3-96DE-DB5C78987E68}
+		{075624D1-6E7C-4FD6-9CFD-D2CAAE4ACD49} = {8BF9B569-2C79-4CF3-96DE-DB5C78987E68}
+		{46933223-63DB-41B3-A5C6-B910A88C3D93} = {1201107A-EA45-48FC-9C37-A0F19BF07F1E}
+	EndGlobalSection
+EndGlobal
