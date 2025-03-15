@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using PandaMQ.Abstractions;
 using PandaMQ.Server.Abstractions;
 
 namespace PandaMQ.Server.Core;
@@ -11,6 +11,8 @@ public static class ServiceCollectionExtensions
     {
         services.TryAddScoped<IJsonWebSocketHandler, JsonWebSocketHandler>();
         services.TryAddScoped<IWebSocketHandler, JsonWebSocketHandler>();
+        services.TryAddSingleton<IJsonSerializer<IEnvelope>, PandaMQJsonSerializer>();
+        services.TryAddSingleton<IWebSocketPipeFactory, WebSocketPipeFactory>();
         services.TryAddSingleton<IMessageServer, MessageServer>();
         return services;
     }
