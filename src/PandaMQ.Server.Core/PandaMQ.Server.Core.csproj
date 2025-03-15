@@ -4,6 +4,12 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PandaMQ.Abstractions\PandaMQ.Abstractions.csproj"/>
+    <ProjectReference Include="..\PandaMQ.Server.Abstractions\PandaMQ.Server.Abstractions.csproj"/>
+  </ItemGroup>
 
 </Project>
